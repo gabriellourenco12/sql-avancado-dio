@@ -1,0 +1,10 @@
+CREATE USER aluno
+IDENTIFIED BY aluno
+DEFAULT TABLESPACE
+TEMPORARY TABLESPACE Temp;
+sqlplus "/as sysdba"
+ALTER USER aluno IDENTIFIED BY treinamento;
+
+GRANT DBA TO aluno;
+
+
